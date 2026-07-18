@@ -14,6 +14,6 @@ microk8s helm3 upgrade --install argocd . \
 
 echo
 echo "Initial password:"
-microk8s kubectl -n argocd get secret argocd-initial-admin-secret \
-    -o jsonpath="{.data.password}" | base64 -d
+#microk8s kubectl -n argocd get secret argocd-initial-admin-secret \
+#    -o jsonpath="{.data.password}" | base64 -d
 echo
